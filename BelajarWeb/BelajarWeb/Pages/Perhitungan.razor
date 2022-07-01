@@ -1,0 +1,40 @@
+﻿@page "/perhitungan"
+
+<h3>Perhitungan</h3>
+
+  <p> <input @bind="nilai1" type="number" />  + <input @bind="nilai2" type="number" /> <button  @onclick="jumlah"> = </button> @hasiljumlah  </p>
+
+  <p> <input @bind="nilai3" type="number" />  - <input @bind="nilai4" type="number" /> <button  @onclick="pengurangan"> = </button> @hasilpengurangan </p>
+
+  <p> <input @bind="nilai5" type="number" />  * <input @bind="nilai6" type="number" /> <button  @onclick="perkalian"> = </button> @hasilperkalian <br/> </p>
+
+  <p> <input @bind="nilai7" type="number" />  / <input @bind="nilai8" type="number" /> <button  @onclick="pembagian"> = </button> @hasilpembagian<br/> </p>
+
+@code {
+
+    int nilai1, nilai2, nilai3, nilai4, nilai5, nilai6, nilai7, nilai8;
+    //int nilai2;
+    int hasiljumlah, hasilpengurangan, hasilperkalian, hasilpembagian;
+
+    void jumlah()
+    {
+        hasiljumlah = nilai1 + nilai2; 
+    }
+
+    void pengurangan()
+    {
+            hasilpengurangan = nilai3 -  nilai4; 
+    }
+
+    void perkalian()
+    {
+            hasilperkalian = nilai5 -  nilai6; 
+    }
+
+    void pembagian()
+    {
+            hasilpembagian = nilai7 /  nilai8; 
+    }
+
+
+}
