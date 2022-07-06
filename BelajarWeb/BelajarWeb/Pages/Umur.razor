@@ -1,18 +1,33 @@
 ﻿@page "/umur"
 
-<table>
-    <tr>
-        <td colspan = 2> </td>
-    </tr>
 
+<table>
+<tr> 
+        <td colspan = 2 > Hitung Umur </td>
+    </tr>
+    <tr>
+        <td>Tanggal Hari ini </td> 
+        <td> : </td>
+        <td> @TglSekarang.ToString("dd/MM/yyyy") </td>
+    </tr>
+    
+    
 </table>
 
+
 @code {
+    DateTime TglSekarang = DateTime.Now;
 
-    
 
-    void hitungUmur()
-    {
-    }
+    //sintak salah 
+    //DateTime tahunlahir;
+    //DateTime tahunSekarang = DateTime.Today;
+
+    //int umur;
+    //void hitungUmur()
+    //{
+    //    umur = Convert.ToInt32( tahunSekarang - tahunlahir);
+    //}
+
 
 }
