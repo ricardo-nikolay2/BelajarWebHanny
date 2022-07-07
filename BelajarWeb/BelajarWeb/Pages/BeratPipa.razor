@@ -1,0 +1,57 @@
+﻿@page "/BeratPipa"
+
+<h3>BeratPipa</h3>
+
+<table>
+    
+    <tr>
+        <td> OD </td>
+        <td> <input @bind="Od" type="number" /> </td>
+    </tr>
+
+    <tr>
+        <td> Thickness </td>
+        <td> <input @bind="Thickness" type="number" /> </td>
+    </tr>
+
+    <tr>
+        <td> Length </td>
+        <td> <input @bind="length" type="number" /> </td>
+    </tr>
+
+    <tr>
+        <td> Qty </td>
+        <td> <input @bind="Qty" type="number" /> </td>
+    </tr>
+    <tr>
+        <td> <button @onclick="hitungBeratPipa" > Hitung </button> </td>
+    </tr>
+
+    <tr>
+        <td> Hasil Berat Pipa =  </td>
+        <td>  @hasil </td>
+        <td>KG </td>
+        
+    </tr>
+
+
+    
+
+</table>
+
+@code {
+
+    decimal Od, Thickness, length, Qty, hasil;
+
+    void hitungBeratPipa()
+    {
+        hasil = ((Od - Thickness) * Thickness * 0.02466m * length * Qty / 1000 );
+        hasil = Math.Round(hasil, 2);
+
+        //Weight = ((OD-Thick1)*Thick1*0.02466m*Length*Quantity)/ 1000;
+        
+        //Weight = Math.Round(Weight, 3);
+        
+
+    }
+}
