@@ -1,0 +1,27 @@
+﻿@page "/HitungPersen"
+
+
+<h3>Hitung Persen </h3>
+
+<input @bind="nilaiPersen" type="number"/> % dari
+
+<input @bind="nilaiInput" type="number" /> 
+
+
+<button @onclick="HitungPersentase" > Hitung </button>
+
+@hasil
+
+
+
+
+@code {
+    decimal nilaiInput;
+    decimal nilaiPersen;
+    decimal hasil;
+
+    void HitungPersentase ()
+    {
+        hasil = nilaiInput * nilaiPersen / 100;
+    }
+}
