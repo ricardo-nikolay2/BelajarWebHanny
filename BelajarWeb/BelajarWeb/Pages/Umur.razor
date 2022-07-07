@@ -7,16 +7,51 @@
     </tr>
     <tr>
         <td>Tanggal Hari ini </td> 
-        <td> : </td>
+        <td> = </td>
         <td> @TglSekarang.ToString("dd/MM/yyyy") </td>
+    
     </tr>
-    
-    
+
+    <tr>
+        <td> Masukkan Tahun Lahir  </td>
+        <td> = </td>
+        <td> <input @bind="tahunLahir" type="number" /> </td>
+        
+    </tr>
+    <tr>
+        <td> Umur anda Sekarang  </td>
+        <td> <button @onclick="hitungUmurSekarang"> = </button>  </td>
+        <td>   @hasil </td>
+    </tr>
+      
 </table>
+    
 
 
 @code {
     DateTime TglSekarang = DateTime.Now;
+    int tahunLahir;
+    int hasil;
+
+    int tahunSekarang;
+
+
+
+    //void hitungUmur()
+    //{
+    //    hasil = Convert.ToInt32(TglSekarang) - tahunLahir;
+    //}
+
+
+    void hitungUmurSekarang()
+    {
+        tahunSekarang = DateTime.Now.Year;
+        hasil = tahunSekarang - tahunLahir;
+
+    }
+
+
+
 
 
     //sintak salah 

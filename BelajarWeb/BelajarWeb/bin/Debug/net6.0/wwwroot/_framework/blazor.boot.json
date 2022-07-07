@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-zNVxhWqav+Wvwc8mjOqsl40bhVLw78MhgITrphqoROc=",
       "netstandard.dll": "sha256-yQ7oiuGXRX47V21EibXbfTPXOkJGOgCJhW9YF6e4hw0=",
       "System.Private.CoreLib.dll": "sha256-Ug2\/rd8Ck7Dls6uaZNmrqc7EvE8f41iX96qdX57LStQ=",
-      "BelajarWeb.dll": "sha256-Pz4Fu72n1IJiYkMPBHL0j8iwlO5V7DgHmnq\/1kznocA="
+      "BelajarWeb.dll": "sha256-OSLATIromspoqq3Fi8taeGJosjetsj6g+bYlv71TC5U="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BelajarWeb.pdb": "sha256-6kg7wZ2hVgTrKYkH4ZFlCT6RZhrdQepe3Uu8W+PFJ1M="
+      "BelajarWeb.pdb": "sha256-k0qVcQNQ9r1gUjk3XfxpPci5kaf6SEC+aLzMdRv6s08="
     },
     "runtime": {
       "dotnet.6.0.6.s2eud9da19.js": "sha256-zJXgw\/tAzTVOXksPhtpZVT12vxHC7S9mQyBRM36dwD0=",
