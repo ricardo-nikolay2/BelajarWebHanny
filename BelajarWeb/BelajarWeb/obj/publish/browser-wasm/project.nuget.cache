@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fj7Ag/mV7z1C2vCTSEeHsrvUrApzivTJ3+GdIXdwrFTngsVsph3s0ByH+0DMNhFc1/qVzclkNUUyu5mXOF03CA==",
+  "dgSpecHash": "d1RJRYBozjoj5OZmHHoVT8b2c7PYTTD5w9g3kzfsp5ggTLyn5FgP7ZnkRPMYeClSAL6E3XwrtfoAjAjyZLg7cA==",
   "success": true,
-  "projectFilePath": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\BelajarWeb.csproj",
+  "projectFilePath": "E:\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\BelajarWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ricardo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.6\\microsoft.aspnetcore.authorization.6.0.6.nupkg.sha512",
     "C:\\Users\\Ricardo\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.6\\microsoft.aspnetcore.components.6.0.6.nupkg.sha512",

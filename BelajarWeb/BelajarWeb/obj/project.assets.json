@@ -1552,11 +1552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\BelajarWeb.csproj",
+      "projectUniqueName": "E:\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\BelajarWeb.csproj",
       "projectName": "BelajarWeb",
-      "projectPath": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\BelajarWeb.csproj",
+      "projectPath": "E:\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\BelajarWeb.csproj",
       "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-      "outputPath": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\obj\\",
+      "outputPath": "E:\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

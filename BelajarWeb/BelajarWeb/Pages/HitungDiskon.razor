@@ -1,7 +1,8 @@
 ﻿@page "/hitungdiskon"
 @using System.Globalization
+@using BelajarWeb.Rumus;
 
-<h3>Hitung Diskon</h3>
+<h3>Hitung Diskon Revisi </h3>
 
 <table cellpadding="5">
      <tr>
@@ -12,15 +13,15 @@
     
      <tr>
         <td> diskon : </td> 
-        <td> <input @bind="diskon" type="number"  onkeypress="@KeyPressHitungDiskon" /> %  </td>  
+        <td> <input @bind-value="diskon" type="number"  @bind-value:event="oninput" @onkeyup="KeyPressHitungDiskon"/> %  </td>  
 
      </tr>
 
-     <tr>
+     @*<tr>
          
          <td> <button @onclick="HitungTotal" align="center"> Hitung </button> </td>
 
-     </tr>
+     </tr>*@
         
      <tr>
          <td> Harga Setelah Diskon :</td>
@@ -41,15 +42,17 @@
     [Inject] 
     protected IJSRuntime JsRuntime { get; set; } 
 
-    
 
-    void HitungTotal()//metode 
-    {
-        hargaDiskon = (harga * diskon / 100);
-        
-        hasil = harga - hargaDiskon;
-        hargasetelahdiskon = hasil.ToString("0,0");
-    }
+
+    //void HitungTotal()//metode 
+    //{
+    //    hargaDiskon = (harga * diskon / 100);
+
+    //    hasil = harga - hargaDiskon;
+    //    hargasetelahdiskon = hasil.ToString("0,0");
+    //}
+
+
 
 
     public void KeyPress(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs args) 
@@ -64,7 +67,10 @@
     { 
         if (args.Key == "Enter")
         {
-            HitungTotal();
+            //HitungTotal();
+            var rumus = new Rumus();
+            hargasetelahdiskon = rumus.HitunghargaSetelahDiskon(harga, diskon, hargaDiskon, hasil).ToString();
+
 
         } 
     } 

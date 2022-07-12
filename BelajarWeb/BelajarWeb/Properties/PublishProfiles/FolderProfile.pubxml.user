@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>E:\Test\web\3</_PublishTargetUrl>
-    <History>False|2022-07-11T12:44:08.9316258Z;False|2022-07-11T19:41:37.8251113+07:00;False|2022-07-11T17:03:19.6896923+07:00;False|2022-07-11T15:18:24.4341622+07:00;False|2022-07-11T15:13:44.8120127+07:00;False|2022-07-11T15:12:51.7570631+07:00;False|2022-07-11T14:01:12.5863334+07:00;False|2022-07-11T13:56:21.2183106+07:00;False|2022-07-11T13:54:44.2141505+07:00;False|2022-07-11T13:44:18.8525380+07:00;False|2022-07-11T13:42:25.1505486+07:00;</History>
+    <_PublishTargetUrl>E:\WebSiteTest</_PublishTargetUrl>
+    <History>False|2022-07-12T01:43:59.2352121Z;</History>
   </PropertyGroup>
 </Project>
