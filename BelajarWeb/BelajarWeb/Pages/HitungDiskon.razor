@@ -1,0 +1,79 @@
+﻿@page "/hitungdiskon"
+@using System.Globalization
+
+<h3>Hitung Diskon</h3>
+
+<table cellpadding="5">
+     <tr>
+        <td>harga :</td> 
+        <td> <input @bind="harga" type="number" onkeypress="@KeyPress" /> </td>  
+
+     </tr> 
+    
+     <tr>
+        <td> diskon : </td> 
+        <td> <input @bind="diskon" type="number"  onkeypress="@KeyPressHitungDiskon" /> %  </td>  
+
+     </tr>
+
+     <tr>
+         
+         <td> <button @onclick="HitungTotal" align="center"> Hitung </button> </td>
+
+     </tr>
+        
+     <tr>
+         <td> Harga Setelah Diskon :</td>
+         <td> <input @bind="hargasetelahdiskon"/> </td>
+
+     </tr>
+</table>
+
+
+
+@code {
+
+    decimal harga, diskon, hargaDiskon, hasil; //variabe
+    string hargasetelahdiskon;
+
+
+
+    [Inject] 
+    protected IJSRuntime JsRuntime { get; set; } 
+
+    
+
+    void HitungTotal()//metode 
+    {
+        hargaDiskon = (harga * diskon / 100);
+        
+        hasil = harga - hargaDiskon;
+        hargasetelahdiskon = hasil.ToString("0,0");
+    }
+
+
+    public void KeyPress(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs args) 
+    { 
+        if (args.Key == "Enter") 
+        { 
+            JsRuntime.InvokeVoidAsync("onFocus","od"); 
+        } 
+    } 
+
+    public void KeyPressHitungDiskon(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs args) 
+    { 
+        if (args.Key == "Enter")
+        {
+            HitungTotal();
+
+        } 
+    } 
+
+
+    
+
+    
+    
+
+
+}

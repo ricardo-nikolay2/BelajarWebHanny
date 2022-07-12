@@ -1,0 +1,67 @@
+﻿@page "/Calculator"
+
+
+
+
+
+<h3 >Calculator</h3>
+
+@*<table border="1"  >
+    
+    <thead> 
+        <tr>
+            <th> <input name=inputNilai type="text" size="15"  id="display"/>  </th>
+        </tr>
+    </thead>
+
+    <tr>
+        
+        <td> 
+            <input type="button" name="seven" value="7" @OnClick="inputNilai.value=+'7'" /> 
+            <input type="button" name="eight" value="8" @OnClick="inputNilai.value=+'8'" />
+            <input type="button" name="nine"  value="9" @OnClick="inputNilai.value=+'9'" />
+        </td>
+        
+    </tr>
+
+    <tr>
+        
+        <td> 
+            <input type="button" name="four" value="4" @OnClick="inputNilai.value=+'4'" /> 
+            <input type="button" name="five" value="5" @OnClick="inputNilai.value=+'5'" />
+            <input type="button" name="six"  value="6" @OnClick="inputNilai1.value=+'6'" />
+        </td>
+        
+    </tr>
+
+    <tr>
+        
+        <td> 
+            <input type="button" name="one"  value="1" @OnClick="inputNilai.value=+'1'" /> 
+            <input type="button" name="two"  value="2" @OnClick="inputNilai.value=+'2'" />
+            <input type="button" name="three"  value="3" @OnClick="inputNilai.value=+'3'" />
+        </td>
+        
+    </tr>
+
+
+</table>
+*@
+
+
+
+<input @bind="currentCount" type="number"/> 
+
+<button @onclick="nilai1">1</button>
+
+
+
+
+@code {
+    private int currentCount = 0;
+
+    void nilai1()
+    {
+        currentCount = 1;
+    }
+}

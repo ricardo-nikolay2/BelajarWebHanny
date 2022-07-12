@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gHBvXvw00qQFsEcOMARkUsQL255J4sMyDqh8vZWw4T4=",
+  "Hash": "Qecga88YYqGPHPImxSL8MHdj2J/nZx//Yu5jcIqJ69M=",
   "Source": "BelajarWeb",
   "BasePath": "/",
   "Mode": "Root",
@@ -7053,6 +7053,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\wwwroot\\focus.js",
+      "SourceId": "BelajarWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "focus.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\focus.js"
     },
     {
       "Identity": "R:\\Ricardo Nikolay\\BelajarWebHanny\\BelajarWeb\\BelajarWeb\\wwwroot\\icon-192.png",
